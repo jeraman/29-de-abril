@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1227330239, guid: ded0a771424c71343b370cb90db37eee, type: 3}
+  m_Name: MyNPCMind
+  m_EditorClassIdentifier: 
+  _dataSerializer:
+    _serializedData: <scriptableobject version="1.0" type="RAIN.BehaviorTrees.BTAsset"><fields><field
+      value="&lt;behaviortree version=&quot;1.0&quot; repeatuntil=&quot;&quot; name=&quot;MyNPCMind&quot;&gt;&lt;selector
+      usepriorities=&quot;False&quot; repeatuntil=&quot;failure&quot; name=&quot;root&quot;&gt;&lt;constraint
+      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;did the player die?&quot;
+      constraint=&quot;dead==true&quot;&gt;&lt;mecparam valueexpression=&quot;True&quot;
+      repeatuntil=&quot;&quot; parametertype=&quot;boolean&quot; parametername=&quot;isDead&quot;
+      name=&quot;death animation&quot; damptime=&quot;0.1&quot; /&gt;&lt;mecparam
+      valueexpression=&quot;False&quot; repeatuntil=&quot;&quot; parametertype=&quot;boolean&quot;
+      parametername=&quot;isRunning&quot; name=&quot;stop running&quot; damptime=&quot;0.1&quot;
+      /&gt;&lt;/constraint&gt;&lt;constraint repeatuntil=&quot;&quot; priority=&quot;&quot;
+      name=&quot;is the player alive?&quot; constraint=&quot;dead==false&quot;&gt;&lt;selector
+      usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; name=&quot;is scaping
+      or not?&quot;&gt;&lt;constraint repeatuntil=&quot;&quot; priority=&quot;&quot;
+      name=&quot;if is escaping&quot; constraint=&quot;isEscaping==true&quot;&gt;&lt;mecparam
+      valueexpression=&quot;true&quot; repeatuntil=&quot;&quot; parametertype=&quot;boolean&quot;
+      parametername=&quot;isRunning&quot; name=&quot;starts running&quot; damptime=&quot;0&quot;
+      /&gt;&lt;move turnspeed=&quot;&quot; repeatuntil=&quot;&quot; name=&quot;move&quot;
+      movetarget=&quot;escapePoint&quot; movespeed=&quot;speed&quot; facetarget=&quot;&quot;
+      closeenoughdistance=&quot;&quot; closeenoughangle=&quot;&quot; /&gt;&lt;action
+      repeatuntil=&quot;&quot; parametervalues=&quot;&quot; parameters=&quot;&quot;
+      namespace=&quot;(global)&quot; name=&quot;if reaches safe position, stops escaping&quot;
+      classname=&quot;AmISafe&quot; /&gt;&lt;/constraint&gt;&lt;constraint repeatuntil=&quot;&quot;
+      priority=&quot;&quot; name=&quot;if he is not escaping&quot; constraint=&quot;isEscaping==false&quot;&gt;&lt;parallel
+      tiebreaker=&quot;fail&quot; succeed=&quot;all&quot; repeatuntil=&quot;&quot;
+      name=&quot;be alive!&quot; fail=&quot;any&quot;&gt;&lt;detect sensor=&quot;Eyes&quot;
+      repeatuntil=&quot;running&quot; name=&quot;detect&quot; entityobjectvariable=&quot;posPlayer&quot;
+      aspectvariable=&quot;&quot; aspectobjectvariable=&quot;&quot; aspect=&quot;aPlayer&quot;
+      /&gt;&lt;selector usepriorities=&quot;False&quot; repeatuntil=&quot;running&quot;
+      name=&quot;can we see the player?&quot;&gt;&lt;constraint repeatuntil=&quot;&quot;
+      priority=&quot;&quot; name=&quot;yes&quot; constraint=&quot;posPlayer != null&quot;&gt;&lt;parallel
+      tiebreaker=&quot;fail&quot; succeed=&quot;all&quot; repeatuntil=&quot;&quot;
+      name=&quot;stop and think&quot; fail=&quot;any&quot;&gt;&lt;mecparam valueexpression=&quot;False&quot;
+      repeatuntil=&quot;&quot; parametertype=&quot;boolean&quot; parametername=&quot;isRunning&quot;
+      name=&quot;para de correr&quot; damptime=&quot;0&quot; /&gt;&lt;action repeatuntil=&quot;&quot;
+      parametervalues=&quot;&quot; parameters=&quot;&quot; namespace=&quot;(global)&quot;
+      name=&quot;computeScapePoint&quot; classname=&quot;RunAwayFromPlayer&quot; /&gt;&lt;expression
+      returnvalue=&quot;evaluate&quot; repeatuntil=&quot;&quot; name=&quot;set scaping
+      state&quot; expression=&quot;isEscaping=true&quot; /&gt;&lt;/parallel&gt;&lt;/constraint&gt;&lt;constraint
+      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;no&quot; constraint=&quot;posPlayer
+      == null&quot;&gt;&lt;parallel tiebreaker=&quot;fail&quot; succeed=&quot;all&quot;
+      repeatuntil=&quot;&quot; name=&quot;run towards final target&quot; fail=&quot;any&quot;&gt;&lt;mecparam
+      valueexpression=&quot;True&quot; repeatuntil=&quot;&quot; parametertype=&quot;boolean&quot;
+      parametername=&quot;isRunning&quot; name=&quot;start running&quot; damptime=&quot;1&quot;
+      /&gt;&lt;move turnspeed=&quot;&quot; repeatuntil=&quot;&quot; name=&quot;move&quot;
+      movetarget=&quot;&amp;quot;FinalTarget&amp;quot;&quot; movespeed=&quot;speed&quot;
+      facetarget=&quot;&quot; closeenoughdistance=&quot;1&quot; closeenoughangle=&quot;&quot;
+      /&gt;&lt;/parallel&gt;&lt;/constraint&gt;&lt;/selector&gt;&lt;/parallel&gt;&lt;/constraint&gt;&lt;/selector&gt;&lt;/constraint&gt;&lt;/selector&gt;&lt;/behaviortree&gt;"
+      type="System.String" id="treeData" /><field type="System.Array" id="treeBindings"
+      elementtype="System.String" /></fields><references /></scriptableobject>
+    _serializedGameObjects: []
+    _serializedCustomData: []
