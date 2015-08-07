@@ -85,6 +85,9 @@
      <None Include="Assets\FPSControlAssets\Art-Packs\Shaders\Glass Shader.shader" />
      <None Include="Assets\FPSControlAssets\Art-Packs\ShellShock-Guns\FPS_m16_notes.txt" />
      <None Include="Assets\FPSControlAssets\Shaders\ToonOutlined.shader" />
+ <Reference Include="Assembly-UnityScript">
+ <HintPath>/Users/jeronimo/Documents/tutorial2/29_de_abril/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
