@@ -11,6 +11,8 @@ public class PresentationGUIControl : MonoBehaviour {
 	public Text t4;
 	public Image instrucoes;
 	public int transition = 1;
+	
+	private int language;
 
 	// Use this for initialization
 	void Start () {
@@ -27,6 +29,8 @@ public class PresentationGUIControl : MonoBehaviour {
 		Invoke("UnloadFourthText", 40-transition);
 		Invoke("ShowInstructions", 40);
 		Invoke("LoadNextScenario", 43);	
+		
+		language  =	PlayerPrefs.GetInt("language");
 	}
 	
 	void Update() {
@@ -97,7 +101,10 @@ public class PresentationGUIControl : MonoBehaviour {
 	
 	void LoadNextScenario() {
 		Debug.Log("loading next scenario");
-		Application.LoadLevel(2);
+		if (language == 0) //if is portuguese
+			Application.LoadLevel(3);
+		else //if it's english
+			Application.LoadLevel(9);
 	}
 	
 	void ShowInstructions () {

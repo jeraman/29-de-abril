@@ -28,6 +28,8 @@ public class EndingGUIControl : MonoBehaviour {
 	
 	private bool isSeventhText = false;
 	private int endOption = 0;
+	
+	private int language;
 
 	// Use this for initialization
 	void Start () {	
@@ -60,6 +62,8 @@ public class EndingGUIControl : MonoBehaviour {
 		Invoke("LoadSeventhText", 80);	
 		Invoke("UnloadSeventhText", 90-transition);
 		Invoke("LoadNextScenario", 90);	
+		
+		language  =	PlayerPrefs.GetInt("language");
 	}
 	
 	
@@ -234,7 +238,10 @@ public class EndingGUIControl : MonoBehaviour {
 	
 	void LoadNextScenario() {
 		Debug.Log("loading next scenario");
-		Application.LoadLevel(0);
+		if (language == 0) //if is portuguese
+			Application.LoadLevel(1);
+		else //if it is english
+			Application.LoadLevel(7);
 	}
 	
 	public void LoadDocumentary() {

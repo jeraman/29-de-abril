@@ -23,6 +23,8 @@ public class CreditosGUIControl : MonoBehaviour {
 	public Text t9;
 
 	public int transition = 1;
+	
+	private int language;
 
 	// Use this for initialization
 	void Start () {
@@ -207,7 +209,10 @@ public class CreditosGUIControl : MonoBehaviour {
 
 	void LoadNextScenario() {
 		Debug.Log("loading next scenario");
-		Application.LoadLevel(0);
+		if (language == 0) //if is portuguese
+			Application.LoadLevel(1);
+		else //if it is english
+			Application.LoadLevel(7);
 	}
 	
 	//public void LoadDocumentary() {

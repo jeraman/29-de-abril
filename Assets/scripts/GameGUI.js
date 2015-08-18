@@ -15,6 +15,8 @@ var tempDeltaTime = 0.0f;
 
 var playerMovements:FPSControlPlayer;
 
+var language;
+
 
 function Start () {
 	Debug.Log("starting game gui control");		
@@ -25,14 +27,25 @@ function Start () {
 	Invoke("MakeQuestion", 10);
 	
 	LoadFadeIn();
+	
+	language = PlayerPrefs.GetInt("language");
 }
 
 function Update () {	
 	UpdatesTimer();
-	professores_feridos.text = Variables.deadNPCs + " professores feridos";
-	professores_salvos.text = Variables.npcCounter + " professores entraram na Alep";
-	tempo_restante.text = Variables.timer.ToString("F2") + "s restantes para a aprovação das reformas";
-	//tempo_restante.text = realTime.ToString("F2") + "s restantes para a aprovação das reformas";
+	
+	if (language==0) {//if it's in portuguese
+		professores_feridos.text = Variables.deadNPCs + " professores feridos";
+		professores_salvos.text = Variables.npcCounter + " professores entraram na Alep";
+		tempo_restante.text = Variables.timer.ToString("F2") + "s restantes para a aprovação das reformas";
+		//tempo_restante.text = realTime.ToString("F2") + "s restantes para a aprovação das reformas";
+	} else { //if it's in english
+		professores_feridos.text = Variables.deadNPCs + " teachers hurt";
+		professores_salvos.text = Variables.npcCounter + " teachers accessed the Alep";
+		tempo_restante.text = Variables.timer.ToString("F2") + "s left for the reforms' approval";
+		//tempo_restante.text = realTime.ToString("F2") + "s restantes para a aprovação das reformas";
+	}
+	
 	
 	//in case the player pressed esc
 	if (Input.GetKey ("escape")) {
@@ -142,7 +155,10 @@ private function ChangeScene () {
 	PlayerPrefs.SetInt("saved npcs", Variables.npcCounter);
 	PlayerPrefs.SetInt("end option", Variables.endOption);
 	
-	Application.LoadLevel(3);
+	if (language==0) //if it's in portuguese
+		Application.LoadLevel(4);
+	else //if it's in english
+		Application.LoadLevel(10);
 }
 
 //calls the fade int

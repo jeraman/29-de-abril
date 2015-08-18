@@ -17,6 +17,8 @@ public class SobreGUIControl : MonoBehaviour {
 	//public Text t7a;
 	public int transition = 1;
 	
+	private int language;
+	
 	//private bool isSeventhText = false;
 
 	// Use this for initialization
@@ -53,6 +55,8 @@ public class SobreGUIControl : MonoBehaviour {
 		
 		*/
 		Invoke("LoadNextScenario", 60);	
+		
+		language  =	PlayerPrefs.GetInt("language");
 	}
 	
 	
@@ -190,7 +194,10 @@ public class SobreGUIControl : MonoBehaviour {
 	
 	void LoadNextScenario() {
 		Debug.Log("loading next scenario");
-		Application.LoadLevel(0);
+		if (language == 0) //if is portuguese
+			Application.LoadLevel(1);
+		else //if it is english
+			Application.LoadLevel(7);
 	}
 	
 }

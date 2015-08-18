@@ -82,6 +82,7 @@
      <Compile Include="Assets\cenario\cerca\CombineChildren.cs" />
      <Compile Include="Assets\scripts\CreditosGUIControl.cs" />
      <Compile Include="Assets\scripts\EndingGUIControl.cs" />
+     <Compile Include="Assets\scripts\IntroScript.cs" />
      <Compile Include="Assets\scripts\OpeningGUIControl.cs" />
      <Compile Include="Assets\scripts\PresentationGUIControl.cs" />
      <Compile Include="Assets\scripts\SobreGUIControl.cs" />

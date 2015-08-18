@@ -6,14 +6,28 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/scenes/opening-screen.unity
+    path: Assets/scenes/intro.unity
   - enabled: 1
-    path: Assets/scenes/presentation.unity
+    path: Assets/scenes/opening-screen-pt.unity
   - enabled: 1
-    path: Assets/scenes/game.unity
+    path: Assets/scenes/presentation-pt.unity
   - enabled: 1
-    path: Assets/scenes/ending.unity
+    path: Assets/scenes/game-pt.unity
   - enabled: 1
-    path: Assets/scenes/sobre.unity
+    path: Assets/scenes/ending-pt.unity
   - enabled: 1
-    path: Assets/scenes/creditos.unity
+    path: Assets/scenes/sobre-pt.unity
+  - enabled: 1
+    path: Assets/scenes/creditos-pt.unity
+  - enabled: 1
+    path: Assets/scenes/opening-screen-en.unity
+  - enabled: 1
+    path: Assets/scenes/presentation-en.unity
+  - enabled: 1
+    path: Assets/scenes/game-en.unity
+  - enabled: 1
+    path: Assets/scenes/ending-en.unity
+  - enabled: 1
+    path: Assets/scenes/sobre-en.unity
+  - enabled: 1
+    path: Assets/scenes/creditos-en.unity
