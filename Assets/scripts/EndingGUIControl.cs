@@ -27,13 +27,16 @@ public class EndingGUIControl : MonoBehaviour {
 	public int transition = 1;
 	
 	private bool isSeventhText = false;
-	private int endOption = 0;
+	private int endOption;
 	
 	private int language;
 
 	// Use this for initialization
 	void Start () {	
 		Debug.Log("ending opening gui control");
+		
+		//language  =	PlayerPrefs.GetInt("language");
+		language = 1;
 		
 		//back to normal time
 		Time.timeScale = 1.0f;
@@ -62,8 +65,6 @@ public class EndingGUIControl : MonoBehaviour {
 		Invoke("LoadSeventhText", 80);	
 		Invoke("UnloadSeventhText", 90-transition);
 		Invoke("LoadNextScenario", 90);	
-		
-		language  =	PlayerPrefs.GetInt("language");
 	}
 	
 	
@@ -90,20 +91,17 @@ public class EndingGUIControl : MonoBehaviour {
 		var deadNPCs  =	PlayerPrefs.GetInt("dead npcs");
 		var savedNPCs = PlayerPrefs.GetInt("saved npcs");
 		endOption     = PlayerPrefs.GetInt("end option");
-		//displaying right results
-		t1Aa.text = deadNPCs + " professores feridos";
-		t1Ab.text = savedNPCs + " professores conseguiram entrar na Alep";
+
+		Debug.Log("idioma: " + language);
 		
-		/*
-		if (savedNPCs == 0) //se ninguem entrou
-			t1A.text = "Seus superiores estão orgulhosos. Seu saldo final foi:";
-		else if (savedNPCs <= 3) //se apenas tres professores 
-			t1A.text = "Seus superiores estão orgulhosos. Seu saldo final foi:";
-		else if (savedNPCs <= 10) //se apenas tres professores 
-			t1A.text = "Seus superiores estão satisfeitos. Seu saldo final foi:";
-		else //mais que 10 professores invadiram a Alep
-			t1A.text = "Seus superiores estão desapontados. Seu saldo final foi:";
-		*/
+		if (language == 0) { //if is portuguese			
+			//displaying right results
+			t1Aa.text = deadNPCs + " professores fsdseridos";
+			t1Ab.text = savedNPCs + " professores conseguiram entrar na Alep";
+		} else { //if it is in english
+			t1Aa.text = deadNPCs + " teachers hurt";
+			t1Ab.text = savedNPCs + " teachers accessed the Alep";
+		}
 		
 	}
 	

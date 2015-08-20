@@ -146,7 +146,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: "um processo de exonera\xE7\xE3o"
+  m_Text: Possibility of dismissal
 --- !u!222 &3581747
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -184,7 +184,7 @@ RectTransform:
   m_RootOrder: 14
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 0, y: 35}
+  m_AnchoredPosition: {x: 0, y: 38}
   m_SizeDelta: {x: 700, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &233742370
@@ -212,10 +212,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: "\u201CMais de 200 pessoas ficaram feridas, oito em estado grave, durante
-    mais um epis\xF3dio de repress\xE3o da pol\xEDcia do Paran\xE1 a professores da
-    rede estadual de ensino. (...) Treze pessoas foram presas, segundo a Secretaria
-    de Seguran\xE7a P\xFAblica\u2026\u201D"
+  m_Text: "\"More than 200 people were injured, including eight in serious conditions,
+    during another episode of repression against teachers from the public sector by
+    the Parana state\u2019s military police. (...) Thirteen people were arrested,
+    according to Parana\u2019s Public Security Department... \""
 --- !u!222 &233742371
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -281,7 +281,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: na vida real...
+  m_Text: In real life...
 --- !u!222 &246248002
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -347,8 +347,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: "voc\xEA desobedeceu seus superiores e se juntou aos manifestantes invadindo
-    a Alep. \nseu saldo final foi:"
+  m_Text: 'You rebelled, disobeying your superiors and joining the protesters.
+
+    Your score report is:'
 --- !u!222 &319552189
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -386,7 +387,7 @@ RectTransform:
   m_RootOrder: 19
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 0, y: 35}
+  m_AnchoredPosition: {x: 0, y: 34}
   m_SizeDelta: {x: 800, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &536914625
@@ -414,9 +415,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: "Texto original:  \"PM reprime protesto de professores em Curitiba e mais
-    de 200 se ferem\", por Germano Assad, publicado no \"El Pa\xEDs\" em 29 de Abril
-    de 2015."
+  m_Text: "Original text (in portuguese):  \"PM reprime protesto de professores em
+    Curitiba e mais de 200 se ferem\", by Germano Assad, published in \"El Pa\xEDs\"
+    in April 29th 2015."
 --- !u!222 &536914626
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -625,7 +626,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: "deten\xE7\xE3o"
+  m_Text: Arrest
 --- !u!222 &721605319
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -691,7 +692,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: na vida real...
+  m_Text: In real life...
 --- !u!222 &891696586
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -740,10 +741,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: "\u201C(Nada disso) impediu que, do lado de dentro da Assembleia, deputados
-    votassem pela aprova\xE7\xE3o das medidas. Ap\xF3s bate-boca e uma pequena interrup\xE7\xE3o,
-    o l\xEDder do governo Luiz Claudio Romanelli (PMDB) conseguiu os votos necess\xE1rios
-    para a aprova\xE7\xE3o. Foram 31 votos favor\xE1veis contra 19\u2026\u201D"
+  m_Text: "\u201CInside the Assembly, legislators voted for approving the measures.
+    Despite the situation outside, the government leader Luiz Claudio Romanelli got
+    the votes needed for the approval. There were 31 votes in favor and 19 votes against...
+    \""
 --- !u!222 &939608403
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -798,7 +799,7 @@ RectTransform:
   m_RootOrder: 18
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 18.7999992, y: 35}
+  m_AnchoredPosition: {x: 18.7999992, y: 44}
   m_SizeDelta: {x: 800, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &983462393
@@ -826,11 +827,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: "\u201CNum primeiro momento, em nota (\u2026), o Governo s\xF3 teria contabilizado
-    quatro manifestantes feridos (...), embora as redes sociais viessem exibindo fotos
-    de dezenas de pessoas sangrando em fun\xE7\xE3o dos ataques da pol\xEDcia.  A
-    nota do governador Beto Richa, liberada no final do dia, n\xE3o contava mais o
-    n\xFAmero de feridos\u201D."
+  m_Text: "\u201CIn a first moment, (...) the Government released a note mentioning
+    only four injured (...), although photos of dozens of people bleeding due to the
+    police attacks were circulating in social networks. By the end of the day, the
+    note released by the governor Beto Richa did not mention the number of people
+    wounded.\""
 --- !u!222 &983462394
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -956,7 +957,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: "deten\xE7\xE3o"
+  m_Text: Arrest
 --- !u!222 &1025495299
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1022,7 +1023,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: "voc\xEA cumpriu sua miss\xE3o como ordenado. seu saldo foi:"
+  m_Text: 'You followed the orders and accomplished your mission. Your score report
+    is:'
 --- !u!222 &1119137637
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1088,8 +1090,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: "voc\xEA desobedeceu seus superiores por n\xE3o agir contra os manifestantes.\nseu
-    saldo final foi:"
+  m_Text: 'You disobeyed your superiors by refusing acting against the protesters.
+
+    Your score report is:'
 --- !u!222 &1152262501
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1128,7 +1131,7 @@ RectTransform:
   m_RootOrder: 20
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 0, y: -35}
+  m_AnchoredPosition: {x: 0, y: -36}
   m_SizeDelta: {x: 800, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1163452184
@@ -1208,7 +1211,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: "Para ver um v\xEDdeo sobre o massacre de 29 de Abril, clique aqui."
+  m_Text: To watch a short video about the real April 29th,  click here (audio in
+    portuguese).
 --- !u!222 &1163452186
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1348,7 +1352,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: xx professores conseguiram entrar na Alep
+  m_Text: xx  teachers accessed the Alep
 --- !u!222 &1320113419
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1386,7 +1390,7 @@ RectTransform:
   m_RootOrder: 16
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 0, y: 35}
+  m_AnchoredPosition: {x: 0, y: 21}
   m_SizeDelta: {x: 700, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1504103980
@@ -1414,9 +1418,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: "\u201CH\xE1 informa\xE7\xF5es de fontes extraoficiais de que mais de 50
-    policiais militares teriam se recusado a disparar contra manifestantes. Esse grupo
-    estaria passando por processo de exonera\xE7\xE3o\u2026\u201D"
+  m_Text: "\u201CUnofficial sources say that more than 50 police officers refused
+    to shoot protesters. This group would be going through dismissal process... \""
 --- !u!222 &1504103981
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1637,7 +1640,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: "um processo de exonera\xE7\xE3o"
+  m_Text: Possibility of dismissal
 --- !u!222 &1644680967
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1764,7 +1767,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: xx professores feridos
+  m_Text: xx teachers hurt
 --- !u!222 &1711684429
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1830,7 +1833,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: na vida real...
+  m_Text: In real life...
 --- !u!222 &1720405649
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1896,7 +1899,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: ferimentos por balas de borracha
+  m_Text: Injury caused by rubber bullets
 --- !u!222 &2041892452
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1934,7 +1937,7 @@ RectTransform:
   m_RootOrder: 15
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 0, y: 55.2999992}
+  m_AnchoredPosition: {x: 0, y: 49}
   m_SizeDelta: {x: 700, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &2086065743
@@ -1962,10 +1965,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: "\u201CA ofensiva ocorreu em frente \xE0 Assembleia Legislativa, onde, segundo
-    o sindicatos dos professores, 20.000 pessoas protestavam contra as mudan\xE7as
-    na previd\xEAncia para os servidores do Estado. A Pol\xEDcia Militar foi escalada
-    pelo governador Beto Richa para impedir a entrada dos manifestantes na Assembleia\u2026\u201D"
+  m_Text: '"The offensive took place in front of the legislative assembly, where,
+    according to the teachers'' unions, 20,000 people protested against changes in
+    their pension plan. Following orders from Parana state''s governor, Beto Richa,
+    the military police were called to keep protesters away from the assembly..."'
 --- !u!222 &2086065744
 CanvasRenderer:
   m_ObjectHideFlags: 0

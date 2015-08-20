@@ -20,15 +20,13 @@ var language;
 
 function Start () {
 	Debug.Log("starting game gui control");		
+	language = PlayerPrefs.GetInt("language");
 	
 	LoadPlayerMovementsAndMusic();
 	SlowMo();
-	
-	Invoke("MakeQuestion", 10);
-	
 	LoadFadeIn();
 	
-	language = PlayerPrefs.GetInt("language");
+	Invoke("MakeQuestion", 10);
 }
 
 function Update () {	
@@ -162,15 +160,19 @@ private function ChangeScene () {
 }
 
 //calls the fade int
+//check script "FadeInOut" attached to the GUI for details on how this works
 private function LoadFadeIn() {
-	//diz que o fadeout comecou
+	//diz que o fadein comecou
 	Variables.fadeInStarted = true;
+	Debug.Log("fade in comecou!");
 }
 
 //calls the fade out
+//check script "FadeInOut" attached to the GUI for details on how this works
 private function LoadFadeOut() {
 	//diz que o fadeout comecou
 	Variables.fadeOutStarted = true;
+	Debug.Log("fade out comecou!");
 }
 
 private function HaveNotKilledAnyone() {
