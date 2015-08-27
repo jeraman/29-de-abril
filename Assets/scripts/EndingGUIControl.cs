@@ -35,8 +35,8 @@ public class EndingGUIControl : MonoBehaviour {
 	void Start () {	
 		Debug.Log("ending opening gui control");
 		
-		//language  =	PlayerPrefs.GetInt("language");
-		language = 1;
+		language  =	PlayerPrefs.GetInt("language");
+		//language = 1;
 		
 		//back to normal time
 		Time.timeScale = 1.0f;

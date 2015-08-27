@@ -56,7 +56,9 @@ public class CreditosGUIControl : MonoBehaviour {
 		Invoke("UnloadEigthText", 55-transition);
 		Invoke("LoadNinethText", 55);	
 		Invoke("UnloadNinethText", 60-transition);
-		Invoke("LoadNextScenario", 60);	
+		Invoke("LoadNextScenario", 60);
+		
+		language  =	PlayerPrefs.GetInt("language");	
 	}
 	
 	
